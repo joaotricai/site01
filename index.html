@@ -136,6 +136,39 @@ body{background:#f1f1ef;color:#17191b}
  .scene-two .back-number{top:31%!important}
  .scene .moving-car{top:65%!important}
 }
+
+/* Refinamento mobile: 911 central e CARRERA triplo em coluna */
+@media(max-width:750px){
+ .scene-one .back-number{
+  top:39%!important;left:50%!important;
+  font-size:clamp(205px,65vw,430px)!important;
+  letter-spacing:-.14em!important;
+  text-align:center!important;
+  transform-origin:center center!important;
+ }
+ .scene-one .moving-car{top:63%!important}
+ .scene-two .back-number{
+  top:35%!important;left:50%!important;width:100%!important;height:47dvh!important;
+  font-size:0!important;display:flex!important;align-items:center;justify-content:center;
+  overflow:visible!important;
+ }
+ .scene-two .back-number:before{
+  content:"CARRERA\\A CARRERA\\A CARRERA"!important;
+  white-space:pre!important;display:block!important;
+  font:800 clamp(65px,17vw,110px)/.87 Manrope,sans-serif!important;
+  letter-spacing:-.095em!important;text-align:center!important;
+  transform:none!important;
+  color:#e9ebeb!important;text-shadow:0 5px 22px #0005!important;
+ }
+ .scene-two .back-number:after{display:none!important}
+ .scene-two .moving-car{top:68%!important}
+}
+@media(max-width:750px) and (max-height:650px){
+ .scene-one .back-number{top:36%!important}
+ .scene-one .moving-car{top:61%!important}
+ .scene-two .back-number{top:33%!important}
+ .scene-two .moving-car{top:68%!important}
+}
 </style></head><body>
 <header class="top"><a href="#inicio" class="wordmark">911 <small>AN INDEPENDENT EXPERIENCE</small></a><nav class="nav" id="nav"><a href="#inicio">THE DRIVE</a><a href="#historia">THE FEELING</a><a href="#final">EXPLORE</a></nav><button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false">☰</button></header>
 <main><section class="experience" id="inicio" aria-label="Experiência Porsche 911 com animação de rolagem"><div class="stage" id="stage"><div class="scene scene-one" id="sceneOne"><div class="back-number" aria-hidden="true">911</div><div class="moving-car" id="carOne"><img src="https://models.porsche.com/_next/image?q=100&url=https%3A%2F%2Fprs.porsche.com%2Fiod%2Fimage%2FJP%2F9921B2%2F1%2FN4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XoTa1e9RAAtcIKhAAO%2BIsxAA3NFIxzkIVrUIBrXEpABfc1VpR1cetDpRdLdnoDq0uLgYQIWAEF%2BRWkmBWUCKGJUSyp%2BGXwoJFQQNg4AEQCATXkQJRUo5liQRQdWAFcwF1S3EABOOoAmAEYAIUbc-Mjo0EhYRFIQZoA5AGZcxoAFAClc0dbxqgAWADEO5YBFAFFcgFY61tyANgBJdZAAdgCAaVyL66W7gA1du6yADlz3gBkACS%2BACqLeoALR2VC2AFlzisgbkAOLNFa5E7uYHTLYABly1wCR1y33hAPSACVvrkAPLNXKTf5UDa7AK5DbXYEAVUm1Mo4Ag5Wc9AAnhxppNclgIAZ%2BFlaFoUI1MY0LpYrCBCLRcIkED0QDAIPQcLoSklcrhGFFFFobLpTeVaJYgA%3FclientId%3Dicc&w=3840" alt="Porsche 911 Carrera, perfil lateral" fetchpriority="high"></div><div class="scene-index">01 / 02 — ICONIC FORM</div></div><div class="scene scene-two" id="sceneTwo"><div class="back-number" aria-hidden="true">CARRERA</div><div class="moving-car car-two" id="carTwo"><img src="https://models.porsche.com/_next/image?q=100&url=https%3A%2F%2Fprs.porsche.com%2Fiod%2Fimage%2FJP%2F9921B2%2F1%2FN4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XoTa1e9RAAtcIKhAAO%2BIsxAA3NFIxzkIVrUIBrXEpABfc1VpR1cetDpRdLdnoDq0uLgYQIWAEF%2BRWkmBWUCKGJUSyp%2BGXwoJFQQNg4AEQCATXkQJRUo5liQRQdWAFcwF1S3EABOOoAmAEYAIUbc-Mjo0EhYRFIQZoA5AGZcxoAFAClc0dbxqgAWADEO5YBFAFFcgFY61tyANgBJdZAAdgCAaVyL66W7gA1du6yADlz3gBkACS%2BACqLeoALR2VC2AFlzisgbkAOLNFa5E7uYHTLYABly1wCR1y33hAPSACVvrkAPLNXKTf5UDa7AK5DbXYEAVUm1Mo4Ag5Wc9AAnhxppNclgIAZ%2BFlaFoUI1MY0LpYrCBCLRcIkED0QDAIPQcLoSklcrhGFFFFobLpTeVaJYgA%3FclientId%3Dicc&w=3840" alt="Porsche 911 Carrera em segunda composição, com tratamento de cor diferente" loading="lazy"></div><div class="scene-index">02 / 02 — PURE MOTION</div></div><div class="vertical">ENGINEERED TO BE FELT — 001</div><div class="scrollhint" id="scrollhint">ROLE PARA EXPLORAR</div><div class="progress"><span id="progress"></span></div></div></section>
